@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="css/index.css" />
+<style>
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration: underline;
+}
+</style>
+<style>
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2}
+
+#customers tr:hover {background-color: #736AFF;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #736AFF;
+    color: white;
+}
+</style>
+<style>
+p {
+    border: 1px solid black;
+    outline-color:red;
+}
+p.groove {outline-style: groove;}
+	<title>FridgeApp</title>
+
+</style>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#736AFF;
+}
+</style>
+<style> 
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+</style>
+</head>
+<body style="cursor:crosshair">
+	<ul>
+  		<li><a class="active" href="#Fridge">Fridge</a></li>
+  		<li>
+ 			<a href="rec_ing.html">
+				Recipies
+			</a>
+		</li>
+ 		<li>
+ 			<a href="contact.html">
+				Contact boys
+			</a>
+		</li>
+	</ul>
+	<hr></hr>
+<table id="customers">
+	<tr>
+		<th><center>Ingredients</center></th>
+	</tr>
+	<tr>
+		<td>
+			<form>
+  				<input type="text" id="fname" name="fname" value="Ingredients">
+  			</form>
+		</td>
+	</tr>
+</table>
+<center><button class="button"><span>Add</hover></button></center>
+</body>
+</html>
