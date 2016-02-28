@@ -67,10 +67,11 @@ a:active {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    border: none;
 }
 
 #customers td, #customers th {
-    border: 1px solid #ddd;
+
     text-align: left;
     padding: 8px;
 }
@@ -90,9 +91,8 @@ p {
     outline-color:red;
 }
 p.groove {outline-style: groove;}
-	<title>FridgeApp</title>
 
-ul {
+#nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -132,6 +132,15 @@ input[type=text] {
 
 input[type=text]:focus {
     background-color: lightblue;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
 }
 
 body {
