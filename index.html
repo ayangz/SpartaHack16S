@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link type="text/css" rel="stylesheet" href="css/index.css" />
+	<link type="text/css" rel="stylesheet" href="css/index.css" />
+	<title>Home</title>
 </head>
 <body>
 	<ul>
-  		<li><a class="active" href="#Fridge">Fridge</a></li>
+  		<li><a class="active" href="fridge.html">Fridge</a></li>
   		<li>
  			<a href="rec_ing.html">
 				Recipies
@@ -25,11 +26,49 @@
 	<tr>
 		<td>
 			<form>
-  				<input type="text" id="fname" name="fname" value="Ingredients">
+  				<input type="text" id="ingIn" name="fname">
   			</form>
 		</td>
 	</tr>
 </table>
-<center><button class="button"><span>Add</hover></button></center>
+<center><button id= "ingAdd" class="button"><span>Add</hover></button></center>
+<div id="IngredientSection">
+	<ul id="IngList">
+	</ul>
+</div>
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script>
+		var newIng = document.getElementById('ingIn'),
+			ingAdd = document.getElementById('ingAdd');
+
+			rootRef = new Firebase('https://texttest.firebaseIO.com');
+			currentMessageRef = rootRef.child('currentMessage/inputs');
+
+			ingAdd.addEventListener('click', function(){
+
+				currentMessageRef.push(newIng.value);
+				newIng.value = '';
+			})
+
+			//currentMessageRef.on('value', function(snapshot) {
+				newIng.innerText = "kappa";
+				
+				
+				
+				currentMessageRef.on("child_added",function(snapshot) {
+					/*var inputTxt = document.createTextNode(snapshot.val());*/
+					var para = document.createElement("li");
+					para.innerText = snapshot.val();
+					var list = document.getElementById('IngList');
+					list.insertBefore(para, list.childNodes[0]);
+					//PNLY USE INPUTVALIN HERE
+
+				})
+/*				snapshot.forEach(function (childSnapshot) {
+
+				})*/
+
+			//})
+	</script>
 </body>
 </html>
