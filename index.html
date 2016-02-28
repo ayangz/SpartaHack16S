@@ -5,20 +5,19 @@
 	<title>Home</title>
 </head>
 <body>
-	<ul>
-  		<li><a class="active" href="fridge.html">Fridge</a></li>
-  		<li>
+	<ul id="nav">
+  		<li class="top"><a class="active" href="fridge.html">Fridge</a></li>
+  		<li class="top">
  			<a href="rec_ing.html">
 				Recipies
 			</a>
 		</li>
- 		<li>
+ 		<li class="top">
  			<a href="contact.html">
 				Contact boys
 			</a>
 		</li>
 	</ul>
-	<hr></hr>
 <table id="customers">
 	<tr>
 		<th><center>Ingredients</center></th>
@@ -31,7 +30,7 @@
 		</td>
 	</tr>
 </table>
-<center><button id= "ingAdd" class="button"><span>Add</hover></button></center>
+<center><button id= "ingAdd" class="button"><span>Add</span></button></center>
 <div id="IngredientSection">
 	<ul id="IngList">
 	</ul>
@@ -42,7 +41,7 @@
 			ingAdd = document.getElementById('ingAdd');
 
 			rootRef = new Firebase('https://texttest.firebaseIO.com');
-			currentMessageRef = rootRef.child('currentMessage/inputs');
+			currentMessageRef = rootRef.child('inputs');
 
 			ingAdd.addEventListener('click', function(){
 

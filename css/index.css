@@ -101,6 +101,11 @@ p.groove {outline-style: groove;}
 }
 
 li {
+  list-style-type: none;
+  text-align: left;
+}
+
+.top {
     float: left;
 }
 
