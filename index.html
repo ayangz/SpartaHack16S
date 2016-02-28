@@ -35,13 +35,17 @@
 	<ul id="IngList">
 	</ul>
 </div>
+<div id="RecipeSection">
+	<ul id="RecpList">
+	</ul>
+</div>
 <script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
 	<script>
 		var newIng = document.getElementById('ingIn'),
 			ingAdd = document.getElementById('ingAdd');
 
-			rootRef = new Firebase('https://texttest.firebaseIO.com');
-			currentMessageRef = rootRef.child('inputs');
+			rootRef = new Firebase('https://thefridge.firebaseio.com');
+			currentMessageRef = rootRef.child('/inputs');
 
 			ingAdd.addEventListener('click', function(){
 
@@ -50,7 +54,6 @@
 			})
 
 			//currentMessageRef.on('value', function(snapshot) {
-				newIng.innerText = "kappa";
 				
 				
 				
@@ -64,10 +67,18 @@
 
 				})
 /*				snapshot.forEach(function (childSnapshot) {
-
-				})*/
-
-			//})
+*/
+			var recipeRef = new Firebase('https://thefridge.firebaseio.com/recipes');
+			recipeRef.on("value", function(recipesSnapshot){
+				var recipes = recipesSnapshot.val();
+				recipes.forEach(function(recipe){
+					recipe.Ingredients.forEach(function(ingred) {
+						currentMessageRef.forEach(function(inputSnapshot){
+							if
+						});
+					});
+				});
+			});
 	</script>
 </body>
 </html>

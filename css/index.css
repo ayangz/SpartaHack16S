@@ -148,6 +148,23 @@ input[type=text]:focus {
   opacity: .5;
 }
 
+#IngredientSection {
+  float:left;
+  margin: 15px auto;
+  clear:both;
+  width: 45%;
+  background-color:white;
+}
+
+#RecipeSection {
+  float:right;
+  text-align: center;
+  clear: both;
+  width:45%
+  background-color:black;
+  color: white;
+}
+
 body {
     background: url('../images/fridge.jpg') no-repeat center center fixed;
      -webkit-background-size: cover;
