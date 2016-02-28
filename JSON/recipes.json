@@ -1,0 +1,130 @@
+$jsonString = '{
+	"recipes": [
+		{
+			"Name": "Pancakes",
+			"Ingredients":[
+				{"ing1": "pancake batter"},
+				{"ing2": "eggs",},
+				{"ing3": "milk"}
+			],
+			"Steps":[
+				{"step1": "Just follow the directions on the back of the Bisquick package. Makes about 6 pancakes."}
+			]
+		},
+		{
+			"Name": "Bull's Eye",
+			"Ingredients":[
+				{"ing1": "bread"},
+				{"ing2": "eggs",},
+				{"ing3": "butter"}
+			],
+			"Steps":[
+				{"step1": "Cut out a circle from center of bread"},
+				{"step2": "melt 1/2tbsp butter in pan and place outer part of cut bread on pan"},
+				{"step3": "crack 1 egg into center of bread and sprinkle with salt or pepper"}
+				{"step4": "cook over medium heat, turn over after 5 minutes, cook to desired doneness"}
+			]
+		},
+		{
+			"Name": "Cheese Omelet",
+			"Ingredients":[
+				{"ing1": "butter"},
+				{"ing2": "eggs",},
+				{"ing3": "milk"},
+				{"ing4": "cheese"}
+			],
+			"Steps":[
+				{"step1": "melt butter in skillet over medium heat"},
+				{"step2": "beat 3 eggs, 1 tbsp of milk, and 1/4 tsp of salt"},
+				{"step3": "place the beaten ingredients in skillet and cook until done, but eggs are still glossy"},
+				{"step4": "sprinkle 1 and a 1/2 cup of shreded cheese over the omelet, fold in half, cook for one minute more to melt the cheese and serve immediately"}
+			]
+		},
+		{
+			"Name": "Scrambled Cheese Eggs",
+			"Ingredients":[
+				{"ing1": "butter"},
+				{"ing2": "eggs",},
+				{"ing3": "milk"},
+				{"ing4": "cheese"}
+			],
+			"Steps":[
+				{"step1": "combine the 3 eggs, shredded cheese, 2 tbsp milk, salt, and pepper in a bowl and miz well"},
+				{"step2": "melt the 1/2 tbsp butter in a skillet over medium high heat"},
+				{"step3": "add the egg mixture and stir until done to your likeness"},
+				{"step4": "sprinkle seasoning salt and serve"}
+			]
+		},
+		{
+			"Name": "Breakfast Bagel",
+			"Ingredients":[
+				{"ing1": "bagel"},
+				{"ing2": "eggs",},
+				{"ing3": "butter"},
+				{"ing4": "cheese"}
+			],
+			"Steps":[
+				{"step1": "smear bagel with butter, smother with scrambled eggs, and to with slice of cheese"},
+				{"step2": "To make scrambled eggs: Break the eggs into an oiled frying pan. Stir and cook at medium heat till firm. Add salt & pepper to taste"}
+			]
+		},
+		{
+			"Name": "Crispy Ranch Chicken",
+			"Ingredients":[
+				{"ing1": "chicken"},
+				{"ing2": "ranch",},
+				{"ing3": "bread"}
+			],
+			"Steps":[
+				{"step1": "Mix dressing mix and 1/4 cup bread crumbs in a plastic grocery bag, add 4 chicken breasts, and shake until well coated"},
+				{"step2": " Place chicken on an ungreased cookie sheet, and bake in a pre-heated 375 oven for 25-30 minutes or until the juices are clear"}
+			]
+		},
+		{
+			"Name": "BBQ Pork Sandwiches",
+			"Ingredients":[
+				{"ing1": "pork roast"},
+				{"ing2": "bbq sauce",},
+				{"ing3": "buns"}
+			],
+			"Steps":[
+				{"step1": "Cook roast for 8-10 hours on low in a crock pot, drain, cool, remove bones and as much fat as possible, and tear meat into shreds"},
+				{"step2": "Return meat to the crock pot, add BBQ sauce, mix thoroughly, reheat, and serve on buns with coleslaw, potato salad, and pickles"}
+			]
+		},
+		{
+			"Name": "Cheese quesdillas",
+			"Ingredients":[
+				{"ing1": "tortillas"},
+				{"ing2": "cheese",},
+				{"ing3": "chicken"},
+				{"ing4": "salsa"}
+			],
+			"Steps":[
+				{"step1": "Spread salsa on a tortilla, sprinkle with cheese, add bagged chicken, cover with the other tortilla, and microwave for 30-45 seconds"}
+			]
+		},
+		{
+			"Name": "Spaghetti",
+			"Ingredients":[
+				{"ing1": "spaghetti"},
+				{"ing2": "pasta sauce"}
+			],
+			"Steps":[
+				{"step1": "Fill a pot ¾ full of water, bring to a boil, put in as much spaghetti as you think you will need, and cook until it’s pretty limp"}
+				{"step2": "Drain spaghetti, and combine with sauce you have heated up in another pot"}
+			]
+		},
+		{
+			"Name": "Pigs in a blanket",
+			"Ingredients":[
+				{"ing1": "hot dogs"},
+				{"ing2": "flour"},
+			],
+			"Steps":[
+				{"step1": "make dough by mixing flour and water"},
+				{"step2": "Roll the hot dogs in the dough, bake on a greased cookie sheet until golden brown, and serve with Gulden’s Spicy Brown Mustard"}
+			]
+		},
+	],
+}';
